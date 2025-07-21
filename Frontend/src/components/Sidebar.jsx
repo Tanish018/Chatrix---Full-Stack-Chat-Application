@@ -20,10 +20,6 @@ const Sidebar = () => {
 
     if (isUsersLoading) return <SidebarSkeleton />
 
-    const searchedUers = users.filter(user => {
-        user.fullName.toLowerCase().includes(searchTerm.toLowerCase())
-    })
-
     return (
         <aside className="h-full w-20 lg:w-72 border-r border-base-300 flex flex-col transition-all duration-200">
             <div className="border-b border-base-300 w-full p-5">
@@ -31,15 +27,7 @@ const Sidebar = () => {
                     <Users className="size-6" />
                     <span className="font-medium hidden lg:block">Contacts</span>
                 </div>
-                <div className="py-3">
-                    <input
-                        type="text"
-                        className="input input-bordered w-full transition-all duration-75"
-                        placeholder="Search Friends"
-                        value={searchTerm}
-                        onChange={e => setSearchTerm(e.target.value)}
-                    />
-                </div>
+
                 <div className="mt-3 hidden lg:flex items-center gap-2">
                     <label className="cursor-pointer flex items-center gap-2">
                         <input
