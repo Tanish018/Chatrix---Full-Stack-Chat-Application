@@ -92,10 +92,6 @@ CLOUDINARY_SECRET=your_cloudinary_secret
 - Visit [http://localhost:5173](http://localhost:5173) in your browser.
 - Sign up, log in, and start chatting!
 
-## License
-
-This project is licensed under the ISC License.
-
 ---
 
 Feel free to customize this README for your needs!
