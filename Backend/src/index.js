@@ -24,7 +24,7 @@ app.use(cors(
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const frontendPath = path.resolve(__dirname, "../../frontend/dist");
+const frontendPath = path.resolve(__dirname, "../../Frontend/dist");
 
 app.use("/api/auth", authRoutes)
 app.use("/api/messages", messageRoutes)
